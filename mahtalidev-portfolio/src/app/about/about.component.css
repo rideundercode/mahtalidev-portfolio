@@ -1,0 +1,116 @@
+/* Général */
+.about {
+    background-color: #0d0d1f;
+    color: #d1d1d1;
+    padding: 50px;
+    text-align: center;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    box-sizing: border-box;
+}
+
+.about-content {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.about h2 {
+    font-size: 2.5em;
+    color: #00ff00;
+    margin-bottom: 20px;
+}
+
+.about-content p {
+    font-size: 1.1em;
+    color: #b0b0b0;
+    margin-bottom: 30px;
+    text-align: left;
+}
+
+/* Boutons */
+.buttons {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    margin-bottom: 20px;
+}
+
+.buttons button {
+    background-color: transparent;
+    color: #00ff00;
+    border: 1px solid #00ff00;
+    padding: 10px 20px;
+    cursor: pointer;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.buttons button:hover {
+    background-color: #00ff00;
+    color: #0d0d1f;
+}
+
+/* Contenu affiché */
+.content-display {
+    margin-top: 20px;
+    text-align: left;
+    max-width: 600px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.content-display .company {
+    font-style: italic;
+    color: #a0a0a0; /* Couleur légèrement plus claire que le texte principal */
+    display: block; /* Force la ligne à s'afficher en dessous */
+    margin-top: 5px;
+}
+
+
+/* Style pour les listes */
+.content-display ul {
+    list-style: none;
+    padding-left: 0;
+}
+
+.content-display li {
+    font-size: 1em;
+    line-height: 1.6em;
+    margin-bottom: 10px;
+}
+
+/* Styles pour les titres et les éléments importants */
+.content-display .date {
+    font-weight: bold;
+    color: #00ff00;
+}
+
+.content-display .highlight {
+    font-weight: bold;
+    color: #00ff00;
+}
+
+.content-display strong {
+    font-weight: bold;
+    color: #d1d1d1; /* Utilise le gris clair au lieu du vert */
+}
+
+/* Style pour les sous-listes */
+.content-display .details {
+    margin-top: 10px;
+}
+
+.content-display .details li {
+    font-size: 0.95em;
+    margin-bottom: 5px;
+    color: #b0b0b0; /* Gris clair pour un texte de moindre importance */
+}
+
+/* Style pour les sous-listes sans puces */
+.content-display .details ul {
+    list-style: none;
+    padding-left: 0;
+    margin-top: 5px;
+}

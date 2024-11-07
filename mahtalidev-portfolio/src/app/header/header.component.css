@@ -1,0 +1,53 @@
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    background-color: #1a1a2e;
+    color: #d1d1d1;
+    z-index: 1000;
+
+}
+
+.logo {
+    font-size: 1.2em;
+    font-weight: bold;
+    color: #d1d1d1;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 15px;
+}
+
+nav ul li a {
+    color: #d1d1d1;
+    text-decoration: none;
+    font-size: 0.9em;
+    position: relative;
+    padding-bottom: 5px; /* Espace pour la barre */
+    transition: color 0.3s ease; /* Transition douce pour la couleur */
+}
+
+/* Changement de couleur au survol */
+nav ul li a:hover {
+    color: #00ff00;
+}
+
+/* Barre sous l'élément au survol */
+nav ul li a::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    height: 2px;
+    width: 0;
+    background-color: #00ff00;
+    transition: width 0.3s ease; /* Animation de la largeur de la barre */
+}
+
+/* La barre s'étend au survol */
+nav ul li a:hover::after {
+    width: 100%; /* Barre pleine largeur au survol */
+}

@@ -1,0 +1,83 @@
+<section class="about">
+    <div class="about-content">
+        <h2>About Me</h2>
+        <p>
+            Passionné par le développement et les technologies innovantes, je suis motivé à appliquer mes compétences techniques dans des projets ambitieux et transformer des idées en solutions efficaces. Avec une expérience diversifiée dans le développement full-stack, je suis toujours prêt à relever de nouveaux défis et à évoluer dans un environnement dynamique.
+        </p>
+        
+        <div class="buttons">
+            <button (click)="showExperience()">Expériences Professionnelles</button>
+            <button (click)="showEducation()">Parcours Scolaire</button>
+            <button (click)="showLanguages()">Langues</button>
+            <button (click)="showTechnologies()">Technologies</button>
+        </div>
+        
+        <div class="content-display">
+            <ul *ngIf="selectedContent === 'experience'">       
+                <li>
+                    <span class="date">2024</span>
+                    <strong>  Formateur Bachelor (BAC+1 à BAC+3)</strong>
+                    <br>
+                    <span class="company">Auto-Entrepreneur, Collaboration avec EPSI, Digitalschool, ETNA</span>
+                    <ul class="details">
+                        <li>Enseignement de plusieurs modules techniques incluant :
+                            <ul>
+                                <li><strong>UML</strong> : Cas d’utilisation, diagrammes de séquence, et diagrammes de classes.</li>
+                                <li><strong>Base de données</strong> : Concepts de bases de données relationnelles et non relationnelles, comprenant SQL/ACL, Consistency, Partition Tolerance, Availability.</li>
+                                <li><strong>Langage Java</strong> : Cours sur la syntaxe, programmation orientée objet, concepts de classe, objet, méthode, énumération, collection.</li>
+                                <li><strong>Langage Python</strong> : Variables, structures de contrôle, fonctions, modules, gestion des fichiers et exceptions.</li>
+                                <li><strong>Langage C</strong> : Concepts avancés tels que les pointeurs, tableaux, gestion de la mémoire, structures et unions.</li>
+                                <li><strong>Admi. Poste clients Gestion Accès</strong> : ACL, Expressions Régulières, Bash Avancé, Netfilter, Commandes Linux.</li>
+                            </ul>
+                        </li>
+                        <li><strong>Thèmes spécifiques :</strong> Préparation des étudiants pour les soutenances de fin d'études, incluant la présentation de projets de développement et de réseaux informatiques.</li>
+                    </ul>
+                </li>
+                <br>
+                <li>
+                    <span class="date">2022 - 2023</span>
+                    <strong>  Développeur Full Stack Spring Boot & Angular</strong>
+                    <br>
+                    <span class="company">INFOTEL, Conseil d'État</span>
+                    <ul class="details">
+                        <li><strong>Compétences Techniques :</strong>
+                            <ul>
+                                <li><strong>Modélisation des Données</strong> : Manipulation des données et affichage dans Angular.</li>
+                                <li><strong>Validation des Formulaires</strong> : Gestion des champs obligatoires et des erreurs de saisie.</li>
+                                <li><strong>UI/UX</strong> : Ajustement de l’interface utilisateur en collaboration avec les designers pour améliorer l'expérience utilisateur.</li>
+                                <li><strong>Gestion des Événements</strong> : Développement de fonctionnalités interactives dans Angular, telles que le masquage des tooltips pour une meilleure interactivité.</li>
+                                <li><strong>Optimisation Frontend</strong> : Amélioration de l'affichage et des performances du frontend pour une meilleure fluidité.</li>
+                                <li><strong>Intégration et Tests</strong> : Réalisation de tests des composants Angular, gestion des messages d'erreur, intégration continue avec Git Flow, tests unitaires pour la robustesse du code.</li>
+                                <li><strong>Résolution de Problèmes</strong> : Débogage, maintenance et amélioration continue de l'interface utilisateur pour répondre aux besoins du client.</li>
+                            </ul>
+                        </li>
+                        <li><strong>Environnement Technique :</strong> Maven, Spring Boot, JPA, JUnit, Angular, GitLab, Docker, Kafka, SQL, Jira, Postman.</li>
+                        <li><strong>Collaboration et Méthodologies de Travail :</strong> Utilisation des architectures microservices pour le développement de services REST, travail en méthode agile pour une meilleure adaptabilité, collaboration étroite avec les équipes UX/UI et transverse pour des projets complexes, et échanges réguliers avec les métiers (Greffier/Magistrat) pour ajuster les fonctionnalités aux besoins opérationnels.</li>
+                    </ul>
+                </li>
+            </ul>
+            
+            <ul *ngIf="selectedContent === 'education'">
+                <li><span class="date">2018 - 2021</span> - <strong>Licence Informatique</strong> - Université Sorbonne Paris Nord</li>
+                <li><span class="date">2021 - 2023</span> - <strong>Master Informatique</strong> - ETNA</li>
+            </ul>
+            
+            <ul *ngIf="selectedContent === 'languages'">
+                <li><span class="level">Français</span> : <span class="highlight">C2</span> (Natif)</li>
+                <li><span class="level">Anglais</span> : <span class="highlight">C1</span> (Professionnel)</li>
+                <li><span class="level">Espagnol</span> : <span class="highlight">B1</span> (Conversation)</li>
+                <li><span class="level">Arabe</span> : <span class="highlight">C2</span> (Natif)</li>
+            </ul>
+            
+            <ul *ngIf="selectedContent === 'technologies'">
+                <li>SQL, Cassandra, GitHub, GitLab</li>
+                <li>WordPress, IntelliJ, Perl, Python</li>
+                <li>Java, Postman, Vue.js, React</li>
+                <li>TypeScript, Bootstrap, HTML, CSS</li>
+                <li>JavaScript, VS Code, Docker, Kafka (message broker)</li>
+                <li>Spring Boot, JADE (Agent), Angular</li>
+            </ul>            
+            
+        </div>
+    </div>
+</section>
