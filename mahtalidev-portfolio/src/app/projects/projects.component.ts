@@ -7,7 +7,24 @@ import { Component } from '@angular/core';
 })
 export class ProjectsComponent {
   projects = [
-    
+    {
+      title: 'MultiAgentSystemJava',
+      description: 'Développement d’un système multi-agent en Java utilisant JADE pour simuler des interactions de négociation entre agents.',
+      technologies: ['Java', 'JADE'],
+      githubLink: 'https://github.com/rideundercode/MultiAgentSystemJava'
+    },
+    {
+      title: 'Bank',
+      description: "Développement d'une application bancaire avec une API REST pour le traitement des opérations bancaires, avec Spring Boot et Angular.",
+      technologies: ['Spring Boot', 'Angular', 'DTO', 'Spring Security'],
+      githubLink: 'https://github.com/rideundercode/bank'
+    },
+    {
+      title: 'Todolist',
+      description: "Conception d'une API REST avec Spring Boot pour gérer une liste de tâches, intégrant des fonctionnalités de filtrage et tri.",
+      technologies: ['Spring Boot', 'Angular', 'JPA', 'Hibernate', 'H2'],
+      githubLink: 'https://github.com/rideundercode/projet_todo_liste'
+    },
     {
       title: 'Monet Maker',
       description: "Script Python permettant de créer un dessin artistique des contours d'une image en utilisant des techniques de détection de contours.",
@@ -55,24 +72,6 @@ export class ProjectsComponent {
       description: 'Implémenter un serveur conforme à une version simplifiée du protocole HTTP.',
       technologies: ['Langage C'],
       githubLink: 'https://github.com/rideundercode/Cherokee'
-    },
-    {
-      title: 'MultiAgentSystemJava',
-      description: 'Développement d’un système multi-agent en Java utilisant JADE pour simuler des interactions de négociation entre agents.',
-      technologies: ['Java', 'JADE'],
-      githubLink: 'https://github.com/rideundercode/MultiAgentSystemJava'
-    },
-    {
-      title: 'Bank',
-      description: "Développement d'une application bancaire avec une API REST pour le traitement des opérations bancaires, avec Spring Boot et Angular.",
-      technologies: ['Spring Boot', 'Angular', 'DTO', 'Spring Security'],
-      githubLink: 'https://github.com/rideundercode/bank'
-    },
-    {
-      title: 'Todolist',
-      description: "Conception d'une API REST avec Spring Boot pour gérer une liste de tâches, intégrant des fonctionnalités de filtrage et tri.",
-      technologies: ['Spring Boot', 'Angular', 'JPA', 'Hibernate', 'H2'],
-      githubLink: 'https://github.com/rideundercode/projet_todo_liste'
     }
   ];
 }
